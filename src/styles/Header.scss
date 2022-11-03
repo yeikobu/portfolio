@@ -1,0 +1,42 @@
+@use 'vars';
+
+nav { 
+  display: flex;
+  padding: 14px 24px;
+}
+
+ul {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: var(--sm);
+}
+
+li {
+  margin-top: 12px;
+  padding-inline: 4px;
+  margin-inline: 12px;
+}
+
+li a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0px, 22px, 0px, 22px;
+  border-bottom: 4px solid var(--pink);
+  font-weight: bolder;
+  font-size: var(--lg);
+}
+
+@media (max-width: 650px) { 
+  nav { 
+    padding: 48px 12px;
+  }
+
+  li {
+    width: 138px;
+  }
+}

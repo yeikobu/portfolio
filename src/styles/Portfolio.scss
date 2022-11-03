@@ -1,0 +1,75 @@
+@use 'vars';
+
+.portfolio-container {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  backdrop-filter: blur(1.5px);
+  margin: 140px 1px 22px 1px;
+}
+
+// .portfolio-container {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   background: rgba(0, 0, 0, 0);
+//   border-radius: 30px;
+//   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.052);
+//   backdrop-filter: blur(1px);
+//   margin: 18px;
+// }
+
+.portfolio-container h3 {
+  color: var(--hospital-green);
+  font-size: var(--xlg);
+  margin: 5rem 0 1rem 0;
+}
+
+.projects-container { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-container {
+  max-width: 520px;
+  margin: 24px 24px;
+}
+
+.portfolio-container div * { 
+  padding: 8px 0 8px 0;
+}
+
+.project-title {
+  color: var(--pink);
+  font-size: var(--md);
+  text-decoration: none;
+}
+
+.project-description {
+  color: var(--black);
+  font-size: var(--sm);
+}
+
+.project-image {
+  width: 100%;
+  min-width: 320px;
+  min-height: 220px;
+  border-radius: 30px;
+}
+
+@media (max-width: 650px) { 
+  .portfolio-container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 32px 0 100px 0;
+  }
+
+  .projects-container { 
+    display: flex;
+    flex-direction: column;
+    margin: 1px 24px;
+  }
+}
