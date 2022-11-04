@@ -1,49 +1,42 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import {db} from '../firebase/config'
+import {collection, getDocs} from 'firebase/firestore';
+import Project from './Project';
 import '../styles/Portfolio.scss';
+import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
 
-const Portfolio = ({ projectTitle, projectDescription, projectImg, projectLink }) => {
+const Portfolio = () => {
+
+  const [projects, setProjects] = useState([]);
+
+  const fetchProjects = async () => {
+    await getDocs(collection(db, 'projects'))
+    .then((querySnapshot) => {
+      const newData = querySnapshot.docs.map((doc) => ({...doc.data(), id:doc.id}));
+      setProjects(newData);
+      console.log(projects, newData);
+    })
+  }
+
+  useEffect(() => {
+    fetchProjects();
+  }, [])
+
   return (
     <>
       <div className='portfolio'>
-        <section className='portfolio-container'>
+        <div className='portfolio-container'>
           <h3>My Recent Work</h3>
 
           <div className='projects-container'>
-            <div className='project-container'>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager" className="project-title">My Easy Crypto Manager</a>
-              <h4 className='project-description'> A Crypto asset tracker/manager app. Created using Swift, SwiftUI, Rest API and Core Haptics to access the haptics engine.</h4>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager">
-                <img src="https://media.giphy.com/media/2mKfZnSqtfA9ZQQBuk/giphy.gif" alt="My easy crypto manager" className="project-image" />
-              </a>
-            </div>
-
-
-            <div className='project-container'>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager" className="project-title">My Easy Crypto Manager</a>
-              <h4 className='project-description'> A Crypto asset tracker/manager app. Created using Swift, SwiftUI, Rest API and Core Haptics to access the haptics engine.</h4>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager">
-                <img src="https://media.giphy.com/media/2mKfZnSqtfA9ZQQBuk/giphy.gif" alt="My easy crypto manager" className="project-image" />
-              </a>
-            </div>
-
-            <div className='project-container'>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager" className="project-title">My Easy Crypto Manager</a>
-              <h4 className='project-description'> A Crypto asset tracker/manager app. Created using Swift, SwiftUI, Rest API and Core Haptics to access the haptics engine.</h4>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager">
-                <img src="https://media.giphy.com/media/2mKfZnSqtfA9ZQQBuk/giphy.gif" alt="My easy crypto manager" className="project-image" />
-              </a>
-            </div>
-
-            <div className='project-container'>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager" className="project-title">My Easy Crypto Manager</a>
-              <h4 className='project-description'> A Crypto asset tracker/manager app. Created using Swift, SwiftUI, Rest API and Core Haptics to access the haptics engine.</h4>
-              <a href="https://github.com/J-kobu/MyEasyCryptoManager">
-                <img src="https://media.giphy.com/media/2mKfZnSqtfA9ZQQBuk/giphy.gif" alt="My easy crypto manager" className="project-image" />
-              </a>
-            </div>
+            {
+              projects.map((project, i) => (
+                <Project key={i} description={project.description} img={project.img} link={project.link} title={project.title} />
+              ))
+            }
           </div>
-
-        </section>
+          
+        </div>
       </div>
     </>
   );

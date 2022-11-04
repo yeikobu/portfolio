@@ -1,0 +1,36 @@
+.project-container {
+  max-width: 520px;
+  margin: 24px 24px;
+}
+
+.portfolio-container div * { 
+  padding: 8px 0 8px 0;
+}
+
+.project-title {
+  color: var(--pink);
+  font-size: var(--md);
+  text-decoration: none;
+}
+
+.project-description {
+  color: var(--black);
+  font-size: var(--sm);
+}
+
+.project-image {
+  width: 100%;
+  min-width: 320px;
+  min-height: 220px;
+  border-radius: 30px;
+}
+
+
+//Media querys 
+@media (max-width: 752px) { 
+  .projects-container { 
+    display: flex;
+    flex-direction: column;
+    margin: 1px 24px;
+  }
+}
