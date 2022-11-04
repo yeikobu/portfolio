@@ -3,7 +3,6 @@ import {db} from '../firebase/config'
 import {collection, getDocs} from 'firebase/firestore';
 import Project from './Project';
 import '../styles/Portfolio.scss';
-import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
 
 const Portfolio = () => {
 
@@ -35,7 +34,7 @@ const Portfolio = () => {
               ))
             }
           </div>
-          
+
         </div>
       </div>
     </>
