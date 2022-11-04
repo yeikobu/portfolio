@@ -9,8 +9,9 @@ function App() {
       <div className="main-container">
         <Header />
         <About />
+        <Portfolio />
       </div>
-      <Portfolio />
+      
     </div>
   );
 }

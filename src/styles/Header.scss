@@ -26,9 +26,13 @@ li a {
   color: var(--white);
   text-decoration: none;
   margin: 0px, 22px, 0px, 22px;
-  border-bottom: 4px solid var(--pink);
+  // border-bottom: 4px solid var(--pink);
   font-weight: bolder;
   font-size: var(--lg);
+}
+
+li a:hover {
+  color: var(--pink);
 }
 
 @media (max-width: 752px) { 
@@ -38,5 +42,9 @@ li a {
 
   li {
     width: 138px;
+  }
+
+  li a {
+    font-size: var(--md);
   }
 }
