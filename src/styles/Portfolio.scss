@@ -1,15 +1,13 @@
 @use 'vars';
 
 .portfolio-container {
-  background: rgba(0, 0, 0, 0);
-  border-radius: 30px;
   backdrop-filter: blur(1.5px);
-  margin: 100px 8px 22px 8px;
+  margin: 100px 0;
   text-align: center;
 }
 
 .portfolio-container h3 {
-  color: var(--hospital-green);
+  color: var(--white);
   font-size: var(--xlg);
   margin: 5rem 0 1rem 0;
   padding-top: 40px;

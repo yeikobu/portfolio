@@ -30,8 +30,7 @@ const About = () => {
           <h3 className='about-me-title'> About me</h3>
           <p className='about-me-text'>I'm a Software Engineer student based in Santiago, Chile.
             Since 2020 I started to learn programming at university.
-            At present, I am learning iOS development with Swift, and SwiftUI.
-            My mother tongue is Spanish, but I can also speak English and Japanese.
+            At present, I provide solutions with Swift and Javascript to many clients arround the world. 
           </p>
         </div>
       </section>
