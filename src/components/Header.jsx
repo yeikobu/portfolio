@@ -4,21 +4,22 @@ import '../styles/Header.scss';
 const Header = () => {
   return (
     <header>
+      <div className='logo-container'>
+        <a href="/#" className='jacob-logo-link'>
+          <img src={require(`../images/jacobaguilar.png`)} alt="Jacob aguilar's logo" className='logo' />
+        </a>
+      </div>
       <nav>
-        <ul>
-          <li>
+        <div className='dropdown-menu'>
+          <a href='/#' className='btn-portfolio'> Portfolio</a>
+          <div className='menu-content'>
             <a href='/#'>About me</a>
-          </li>
-          <li>
-            <a href='/#'>Portfolio</a>
-          </li>
-          <li>
-            <a href='/#'>Blog </a>
-          </li>
-          <li>
-            <a href='/#'>Contact me</a>
-          </li>
-        </ul>
+            <a href='/#'>My recent work</a>
+            <a href='/#'>What I am expert in</a>
+          </div>
+        </div>
+        <a href='/#'>Blog </a>
+        <a href='/#'>Contact me</a>
       </nav>
     </header>
   );
