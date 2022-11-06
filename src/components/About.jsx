@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/About.scss'
+import '../styles/About.scss';
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
           <p> Software developer</p>
           <h1> "Solving problems by tech is my passion" </h1>
           <div className='sns-container'>
-            <a href='https://www.instagram.com/dev.mobile.jacob/'>
+            <a href='https://www.instagram.com/dev.swift.jacob/'>
               <img src={require(`../images/sns/instagram.png`)} className='sns-icon' alt='instagram icon' />
             </a>
             <a href="https://www.linkedin.com/in/jacob-aguilar-campos-4b3406a4/">

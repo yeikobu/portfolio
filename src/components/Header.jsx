@@ -15,7 +15,7 @@ const Header = () => {
           <div className='menu-content'>
             <a href='/#'>About me</a>
             <a href='/#'>My recent work</a>
-            <a href='/#'>What I am expert in</a>
+            <a href='/#'>What I know in</a>
           </div>
         </div>
         <a href='/#'>Blog </a>

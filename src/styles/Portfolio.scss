@@ -2,14 +2,21 @@
 
 .portfolio-container {
   backdrop-filter: blur(1.5px);
-  margin: 100px 0;
+  margin: 100px 0 50px;
   text-align: center;
 }
 
 .portfolio-container h3 {
   color: var(--white);
   font-size: var(--xlg);
-  margin: 5rem 0 1rem 0;
+  margin: 5rem 0 0 0;
+  padding-top: 40px;
+}
+
+.portfolio-container h5 { 
+  color: var(--hospital-green);
+  font-size: var(--lg);
+  margin: 2rem 0 1rem 0;
   padding-top: 40px;
 }
 
@@ -34,7 +41,6 @@
   }
 
   .portfolio-container h3 {
-    color: var(--hospital-green);
     font-size: var(--xlg);
     margin: 1rem 0 1rem 0;
     padding-top: 40px;
