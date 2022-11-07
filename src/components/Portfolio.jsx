@@ -7,7 +7,6 @@ import Project from './Project';
 const Portfolio = () => {
 
   const [projects, setProjects] = useState([]);
-  // const [mobileProjects, setMobileProjects] = useState([]);
 
   const mobileProjects = projects.filter(project => project.category === 'mobile');
   const webProjects = projects.filter(project => project.category === 'web');
@@ -30,7 +29,7 @@ const Portfolio = () => {
       <div className='portfolio'>
         <div className='portfolio-container'>
           <h3>My Recent Work</h3>
-          <section>
+          <div>
             <h5>Mobile Projects</h5>
             <div className='projects-container'>
               {
@@ -39,14 +38,16 @@ const Portfolio = () => {
                 ))
               }
             </div>
-          </section>
-          <h5>Web Projects</h5>
-          <div className='projects-container'>
-            {
-              webProjects.map((project, i) => (
-                <Project key={i} description={project.description} img={project.img} link={project.link} title={project.title} />
-              ))
-            }
+          </div>
+          <div>
+            <h5>Web Projects</h5>
+            <div className='projects-container'>
+              {
+                webProjects.map((project, i) => (
+                  <Project key={i} description={project.description} img={project.img} link={project.link} title={project.title} />
+                ))
+              }
+            </div>
           </div>
         </div>
       </div>

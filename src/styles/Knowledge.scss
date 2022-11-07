@@ -1,0 +1,21 @@
+.knowledge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.knowledge-container h3 {
+  color: var(--white);
+  font-size: var(--xlg);
+  margin: 5rem 0 1rem 0;
+  padding-top: 40px;
+}
+
+
+@media (max-width: 752px) { 
+  .knowledge-container h3 { 
+    font-size: var(--xlg);
+    margin: 1rem 0 1rem 0;
+    padding-top: 40px;
+  }
+}

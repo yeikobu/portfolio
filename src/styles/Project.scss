@@ -1,6 +1,6 @@
 .project-container {
   max-width: 520px;
-  margin: 24px 24px;
+  margin: 24px 12px;
 }
 
 .portfolio-container div * { 
@@ -19,7 +19,6 @@
 }
 
 .project-image {
-  width: 100%;
   width: 510px;
   height: 310px;
   border-radius: 30px;
@@ -30,13 +29,13 @@
 //Media querys 
 @media (max-width: 752px) { 
   .projects-container { 
-    display: flex;
-    flex-direction: column;
-    margin: 1px 24px;
+    max-width: 340px;
+    margin: 12px 1px;
+    
   }
 
   .project-image { 
-    max-width: 330px;
+    max-width: 340px;
     height: 210px;
     object-fit: cover;
   }
