@@ -31,7 +31,7 @@ const Knowledge = () => {
   return (
     <div className='knowledge-container'>
       <h3>What I know in</h3>
-      {/* <p>(Swipe left on..)</p> */}
+      <p>(Swipe left...)</p>
       <Swiper
         effect={"cards"}
         grabCursor={true}
