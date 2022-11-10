@@ -29,9 +29,10 @@ nav {
 .menu-content {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.069);
+  // background-color: rgba(0, 0, 0, 0.069);
+  background-color: #17121ca9;
   min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 16px 4px rgba(10, 10, 10, 0.749);
   border-radius: 30px;
   z-index: 1;
 }
@@ -41,6 +42,10 @@ nav {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+nav a:hover { 
+  color: var(--pink);
 }
 
 .menu-content a:hover {
