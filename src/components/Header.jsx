@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/Header.scss';
 
-const Header = () => {
+const Header = ( {setModalToggle} ) => {
+
   return (
-    <header>
+    <header id='about-me'>
       <div className='logo-container'>
         <a href="/#" className='jacob-logo-link'>
           <img src={require(`../images/jacobaguilar.png`)} alt="Jacob aguilar's logo" className='logo' />
@@ -11,15 +12,16 @@ const Header = () => {
       </div>
       <nav>
         <div className='dropdown-menu'>
-          <a href='/#' className='btn-portfolio'> Portfolio</a>
+          <a href='#about-me' className='btn-portfolio'> Portfolio</a>
           <div className='menu-content'>
-            <a href='/#'>About me</a>
-            <a href='/#'>My recent work</a>
-            <a href='/#'>What I am expert in</a>
+            <a href='#about-me'>About me</a>
+            <a href='#portfolio'>My recent work</a>
+            <a href='#knowledge'>What I know in</a>
           </div>
         </div>
-        <a href='/#'>Blog </a>
-        <a href='/#'>Contact me</a>
+        <a href='#about-me' className='blog' > </a>
+        {/* <a href='/#' onClick={() => {setModalToggle(true)}}>Contact me</a> */}
+        <p onClick={() => {setModalToggle(true)}}>Contact me</p>
       </nav>
     </header>
   );
