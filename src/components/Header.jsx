@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/Header.scss';
 
-const Header = () => {
+const Header = ( {setModalToggle} ) => {
+
   return (
     <header>
       <div className='logo-container'>
@@ -19,7 +20,7 @@ const Header = () => {
           </div>
         </div>
         <a href='/#'>Blog </a>
-        <a href='/#'>Contact me</a>
+        <a href='/#' onClick={() => {setModalToggle(true)}}>Contact me</a>
       </nav>
     </header>
   );
