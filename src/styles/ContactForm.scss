@@ -1,0 +1,138 @@
+@use 'vars';
+
+.modal-container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.582);
+}
+
+.modal-container .custom-modal { 
+  width: 600px;
+  height: 700px;
+  border-radius: 30px;
+  background-color: #17121ca9;
+  box-shadow: 8px 8px 16px 4px rgba(10, 10, 10, 0.922);
+  backdrop-filter: blur(15px);
+  animation: modal-animation 0.7s ease-out;
+  position: relative;
+}
+
+@keyframes modal-animation {
+  from {
+    // width: 10px;
+    // height: 20px;
+    transform: translate(2100px, -95%);
+  }
+}
+
+.modal-header { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header h3 {
+  padding-left: 40%;
+  color: var(--black);
+  font-size: var(--xlg);
+}
+
+.x-mark { 
+  display: flex;
+  justify-content: flex-end;
+  color: var(--pink);
+  font-size: var(--xlg);
+  padding: 3%;
+  cursor: pointer;
+}
+
+.form-container form { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 18px;
+}
+
+.x-mark p {
+  text-align: center;
+  width: 40px;
+  height: 40px; 
+  background-color: #17121ca9;
+  backdrop-filter: blur(1px);
+  padding-top: 2px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 16px 4px rgba(10, 10, 10, 0.749);
+}
+
+form p {
+  color: var(--hospital-green);
+  font-size: var(--md);
+}
+
+form input { 
+  border: none;
+  height: 52px;
+  border-radius: 12px;
+  color: var(--black);
+  background-color: #130e1788;
+  padding: 18px;
+}
+
+form textarea {
+  border: none;
+  border-radius: 30px;
+  color: var(--black);
+  background-color: #130e1788;
+  padding: 18px;
+}
+
+form button { 
+  height: 52px;
+  margin: 10% 20%;
+  background-color: #17121ca9;
+  color: var(--pink);
+  font-size: var(--md);
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 2px rgba(10, 10, 10, 0.591);
+}
+
+
+@media (max-width: 752px) { 
+  .modal-container .custom-modal { 
+    width: 85%;
+    height: 75%;
+    box-shadow: 4px 4px 8px 2px rgba(10, 10, 10, 0.87);
+    backdrop-filter: blur(10px);
+  }
+
+  @keyframes modal-animation {
+    from {
+      width: 10px;
+      height: 20px;
+      transform: translate(600px, -95%);
+    }
+  }
+
+  .x-mark p { 
+    padding-top: 0px;
+    box-shadow: 4px 4px 8px 2px rgba(10, 10, 10, 0.87);
+  }
+
+  .modal-header h3 {
+    padding-left: 30%;
+    font-size: var(--md);
+  }
+
+  form input { 
+    height: 38px;
+  }
+}
