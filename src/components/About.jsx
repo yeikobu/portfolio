@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <section className='profile-container'>
-        <aside className='resume-container' id='about-me'>
+        <aside className='resume-container' >
           <h3> Hi! I'm Jacob 👋🏼</h3>
           <p> Software developer</p>
           <h1> "Solving problems by tech is my passion" </h1>
