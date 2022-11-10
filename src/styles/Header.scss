@@ -12,6 +12,16 @@ nav {
   padding: 14px 0;
 }
 
+nav *:hover { 
+  color: var(--pink);
+}
+
+nav p { 
+  color: var(--white);
+  font-size: var(--lg);
+  cursor: pointer;
+}
+
 .logo-container {
   max-width: 160px;
 }
@@ -44,8 +54,12 @@ nav {
   display: block;
 }
 
-nav a:hover { 
-  color: var(--pink);
+.blog:before {
+  content: "Blog";
+}
+
+.blog:hover::before { 
+  content: "Soon";
 }
 
 .menu-content a:hover {

@@ -12,15 +12,16 @@ const Header = ( {setModalToggle} ) => {
       </div>
       <nav>
         <div className='dropdown-menu'>
-          <a href='/#' className='btn-portfolio'> Portfolio</a>
+          <a href='/' className='btn-portfolio'> Portfolio</a>
           <div className='menu-content'>
-            <a href='/#'>About me</a>
-            <a href='/#'>My recent work</a>
-            <a href='/#'>What I know in</a>
+            <a href='#about-me'>About me</a>
+            <a href='#portfolio'>My recent work</a>
+            <a href='#knowledge'>What I know in</a>
           </div>
         </div>
-        <a href='/#'>Blog </a>
-        <a href='/#' onClick={() => {setModalToggle(true)}}>Contact me</a>
+        <a href='/' className='blog'> </a>
+        {/* <a href='/#' onClick={() => {setModalToggle(true)}}>Contact me</a> */}
+        <p onClick={() => {setModalToggle(true)}}>Contact me</p>
       </nav>
     </header>
   );

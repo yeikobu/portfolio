@@ -29,7 +29,7 @@ const Knowledge = () => {
   }, [])
 
   return (
-    <div className='knowledge-container'>
+    <div className='knowledge-container' id='knowledge'>
       <h3>What I know in</h3>
       <p>(Swipe left...)</p>
       <Swiper

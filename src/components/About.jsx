@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <section className='profile-container'>
-        <aside className='resume-container'>
+        <aside className='resume-container' id='about-me'>
           <h3> Hi! I'm Jacob 👋🏼</h3>
           <p> Software developer</p>
           <h1> "Solving problems by tech is my passion" </h1>
@@ -31,6 +31,9 @@ const About = () => {
           <p className='about-me-text'>I'm a Software Engineer student based in Santiago, Chile.
             Since 2020 I started to learn programming at university.
             At present, I provide solutions with Swift and Javascript to many clients arround the world. 
+            <br />
+            <br />
+            Now I'm Student on<a href='https://platzi.com/r/j-kobu'>Platzi</a>
           </p>
         </div>
       </section>
