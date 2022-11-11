@@ -39,13 +39,21 @@
 //Media querys 
 @media (max-width: 752px) { 
   .projects-container { 
-    max-width: 340px;
-    margin: 12px 1px;
+    width: 340px;
+    margin: 12px 12px;
   }
 
+  .project-title {
+    font-size: var(--sm);
+  }
+
+  .project-description { 
+    width: 300px;
+    font-size: var(--xsm);
+  }
   .project-image { 
-    max-width: 340px;
-    height: 210px;
+    width: 340px;
+    height: 220px;
     object-fit: cover;
   }
 }

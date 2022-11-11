@@ -33,7 +33,7 @@ const About = () => {
             At present, I provide solutions with Swift and Javascript to many clients arround the world. 
             <br />
             <br />
-            Now I'm a Student on<a href='https://platzi.com/r/j-kobu'>Platzi</a>
+            Now I'm a Student on <a href='https://platzi.com/r/j-kobu'>Platzi</a>
           </p>
         </div>
       </section>
