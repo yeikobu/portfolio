@@ -10,6 +10,9 @@ header {
 nav { 
   display: flex;
   padding: 14px 0;
+  color: var(--white);
+  font-size: var(--lg);
+  font-weight: bold;
 }
 
 nav *:hover { 
@@ -17,8 +20,7 @@ nav *:hover {
 }
 
 nav p { 
-  color: var(--white);
-  font-size: var(--lg);
+ 
   cursor: pointer;
   margin: 0 8px;
   margin-top: 2px;
@@ -50,7 +52,6 @@ nav p {
 }
 
 .menu-content a {
-  color: var(--white);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -72,11 +73,17 @@ nav p {
   display: block;
 }
 
-a {
+.dropdown-menu a {
+  text-decoration: none;
+  font-weight: bolder;
+  padding-inline: 4px;
+  margin-inline: 8px;
+}
+
+nav a {
   color: var(--white);
   text-decoration: none;
   font-weight: bolder;
-  font-size: var(--lg);
   padding-inline: 4px;
   margin-inline: 8px;
 }
@@ -96,10 +103,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 12px 4px;
-  }
-
-  nav p { 
-    font-size: 16px;
+    font-size: var(--sm);
     font-weight: bold;
   }
 
@@ -112,10 +116,6 @@ a {
 
   .logo {
     width: 140px;
-  }
-
-  a {
-    font-size: 16px;
   }
 
   .menu-content { 

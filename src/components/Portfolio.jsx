@@ -28,7 +28,6 @@ const Portfolio = () => {
     <>
       <div className='portfolio'>
         <div className='portfolio-container' id='portfolio'>
-          <h3>My Recent Work</h3>
           <div>
             <h5>Mobile Projects</h5>
             <div className='projects-container'>
