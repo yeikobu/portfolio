@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   background-color: rgba(40, 40, 40, 0.582);
+  animation: modal-container-animation 0.3s ease-in;
 }
 
 .modal-container .custom-modal { 
@@ -19,15 +20,19 @@
   background-color: #17121ca9;
   box-shadow: 8px 8px 16px 4px rgba(10, 10, 10, 0.922);
   backdrop-filter: blur(15px);
-  animation: modal-animation 0.7s ease-out;
+  animation: modal-animation 0.5s linear;
   position: relative;
+}
+
+@keyframes modal-container-animation {
+  from {
+    transform: scale(0.1);
+  }
 }
 
 @keyframes modal-animation {
   from {
-    // width: 10px;
-    // height: 20px;
-    transform: translate(2100px, -95%);
+    transform: scale(0.2);
   }
 }
 
