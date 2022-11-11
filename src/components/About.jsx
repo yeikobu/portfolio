@@ -4,9 +4,9 @@ import '../styles/About.scss';
 const About = () => {
   return (
     <>
-      <section className='profile-container'>
+      <section className='profile-container' alt='Jacob Aguilar'>
         <aside className='resume-container' >
-          <h3> Hi! I'm Jacob 👋🏼</h3>
+          <h3> Hi! I'm Jacob Aguilar👋🏼</h3>
           <p> Software developer</p>
           <h1> "Solving problems by tech is my passion" </h1>
           <div className='sns-container'>

@@ -1,23 +1,16 @@
 @use 'vars';
 
 .portfolio-container {
-  background-color: #23023f24;
   backdrop-filter: blur(1px);
-  margin: 80px 0 50px 0;
+  margin: 80px 0 80px 0;
   text-align: center;
 }
 
-.portfolio-container h3 {
-  color: var(--white);
-  font-size: var(--xlg);
-  margin: 20px 0 20px 0;
-  padding-top: 40px;
-}
-
 .portfolio-container h5 { 
-  color: var(--hospital-green);
-  font-size: var(--lg);
+  color: var(--black);
+  font-size: var(--xlg);
   margin-top: 80px;
+  margin-bottom: 12px;
 }
 
 .projects-container { 

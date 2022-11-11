@@ -15,14 +15,16 @@
 
 .project-title {
   width: 100%;
-  margin-top: 16px;
+  margin-top: 22px;
+  margin-bottom: 16px;
   color: var(--pink);
-  font-size: var(--md);
+  font-size: var(--lg);
   text-decoration: none;
 }
 
 .project-description {
   width: 380px;
+  margin-bottom: 8px;
   color: var(--black);
   font-size: var(--sm);
 }
