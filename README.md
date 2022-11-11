@@ -6,10 +6,10 @@
 
 ## This project was developed with the following technologies 🛠 :
 
-✅ [ReactJS](https://reactjs.org/)
-✅ [Sass](https://sass-lang.com/)
-✅ [Firebase](https://firebase.google.com/?hl=en)
-✅ [EmailJS](https://www.emailjs.com/)
+✅ [ReactJS](https://reactjs.org/) \
+✅ [Sass](https://sass-lang.com/) \
+✅ [Firebase](https://firebase.google.com/?hl=en) \
+✅ [EmailJS](https://www.emailjs.com/) \
 ✅ [SwiperJS](https://swiperjs.com/).
 
 
