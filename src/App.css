@@ -3,6 +3,7 @@
 html {
   background: linear-gradient(90deg,rgb(3, 0, 11),rgb(28, 1, 47), rgb(28, 1, 40), rgb(3, 0, 11));
   font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
