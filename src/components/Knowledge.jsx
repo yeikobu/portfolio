@@ -36,11 +36,11 @@ const Knowledge = () => {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="mySwiper skill-cards-container"
       >
         {
           skills.map((skill, i) => (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={i} className='skill-cards'>
               <div>
                 <img src={skill.img} alt={skill.title} />
               </div>

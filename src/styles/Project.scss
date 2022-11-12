@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  width: 540px;
+  max-width: 540px;
   margin: 18px 18px;
   background-color: #261c2ea9;
   border-radius: 30px;
@@ -24,7 +24,7 @@
 }
 
 .project-description {
-  width: 385px;
+  max-width: 385px;
   margin-bottom: 8px;
   color: var(--black);
   font-size: var(--sm);
