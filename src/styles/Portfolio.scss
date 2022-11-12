@@ -27,11 +27,11 @@
   align-items: center;
 }
 
-// .projects-container::-webkit-scrollbar { 
-//   width: 0;
-// }
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: red;
+.projects-container::-webkit-scrollbar { 
+  width: 0;
 }
+
+.mySwiper { 
+  --swiper-pagination-color: var(--pink);
+  --swiper-navigation-color: var(--pink);
+ }
