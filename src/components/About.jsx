@@ -16,7 +16,7 @@ const About = () => {
             <a href="https://www.linkedin.com/in/jacob-aguilar-campos-4b3406a4/">
               <img src='https://firebasestorage.googleapis.com/v0/b/portfolio-c3ddb.appspot.com/o/about%2Flinkedin.png?alt=media&token=91eeb5ce-0d6a-4537-94d1-4dc3284a1ae8' className='sns-icon' alt='Jacob Aguilar Likedin' />
             </a>
-            <a href="https://github.com/J-kobu/">
+            <a href="https://github.com/yeikobu/">
               <img src='https://firebasestorage.googleapis.com/v0/b/portfolio-c3ddb.appspot.com/o/about%2Fgithub.png?alt=media&token=034c09cc-d4b2-4cb7-a2fa-aad751051f08' className='sns-icon' alt='Jacob Aguilar Github' />
             </a>
           </div>
