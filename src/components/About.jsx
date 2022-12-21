@@ -6,7 +6,7 @@ const About = () => {
     <>
       <section className='profile-container' alt='Jacob Aguilar'>
         <aside className='resume-container' >
-          <h3> Hi! I'm Jacob Aguilar👋🏼 </h3>
+          <h3> Hi! I'm Jacob Aguilar Campos👋🏼 </h3>
           <p> iOS Developer</p>
           <h1> "Solving problems by tech is my passion" </h1>
           <div className='sns-container'>
@@ -31,7 +31,7 @@ const About = () => {
           <p className='about-me-text'>I am a Software development student based in Santiago de Chile.
             <br />
             <br />
-            Currently, I am in the process of growing as a person by studying business and finance, as well as software development and improving my soft skills on <a href='https://platzi.com/r/yeikobu'>Platzi</a>. 
+            Currently, I am in the process of growing up as a person by studying business and finance, as well as software development and improving my soft skills on <a href='https://platzi.com/r/yeikobu'>Platzi</a>. 
             <br />
             <br />
             I have created native mobile projects for Android and iOS. I have also developed small web projects.
